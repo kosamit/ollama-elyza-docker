@@ -6,8 +6,3 @@ services:
       - "11434:11434"
     environment:
       - OLLAMA_ORIGINS="*"
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - capabilities: [gpu]
