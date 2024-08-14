@@ -1,6 +1,8 @@
 services:
   ollama:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.cpu
     container_name: ollama
     ports:
       - "11434:11434"
